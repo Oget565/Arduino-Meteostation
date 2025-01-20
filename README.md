@@ -1,7 +1,7 @@
 # Arduino Clock and Weather Station
 This project will include everything to create a weather station for your home.
 
-Status: Ready, but no 3d print STL case file
+Status: Ready, There is a STL case file, but no back lid YET.
 
 ## Features:
 - Basic clock
