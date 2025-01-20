@@ -1,4 +1,10 @@
 # Arduino Clock and Weather Station
+<img alt="Static Badge" src="https://img.shields.io/badge/My%20Website-green?link=https%3A%2F%2Foget565.com%2F"> <img alt="Static Badge" src="https://img.shields.io/badge/YouTube-color?color=%23FF0000&link=https%3A%2F%2Fwww.youtube.com%2F%40oget565">
+ <img alt="Static Badge" src="https://img.shields.io/badge/Twitch-color?color=%239146FF&link=https%3A%2F%2Fwww.twitch.tv%2Foget565">
+
+
+
+
 This project will include everything to create a weather station for your home.
 
 Status: Ready, There is a STL case file, but no back lid YET.
