@@ -27,28 +27,47 @@ Status: Ready, There is a STL case file, but no back lid YET.
 ## Instructions:
 
 1) Connect modules to arduino:
+### BME280 
+VIN →	 5V
 
-| Module    | Pin      | Arduino pin                |
-| :--------: | :-------: | :-------------------------: |
-| BME280 | VIN | 5V|
-|  | GND | GND| 
-| | SCL | A5|
-| | SDA | A4|
-| ENS160 | VIN | 5V|
-| | GND | GND |
-| | SCL | A5 |
-| | SDA | A$ |
-| TFT DISPLAY | VCC | 5V |
-| | GND | GND |
-| | SCL | D13| 
-| | SDA | D11 |
-| | RES | D8 |
-| | DC | D9 |
-| | CS | D10|
-| DS3231 | VCC | 5V|
-| | GND | GND |
-| | SCL | A5 |
-| | SDA | A4 |
+GND →	 GND
+
+SCL →	 A5
+
+SDA →	 A4
+
+### ENS160
+VIN →	 5V
+
+GND →	 GND
+
+SCl →	 A5
+
+SDA →	 A4
+
+### TFT DISPLAY
+VCC →	5V
+
+GND →	 GND
+
+SCL →	 D13
+
+SDA →	 D11
+
+RES →	 D8
+
+DC →	 D9
+
+CS →	 D10
+
+### DS3231
+VCC → 5V
+
+GND →	 GND
+
+SCL →	 A5
+
+SDA A4
 
 2) Download these libraries:
    -  RTClib
@@ -60,3 +79,10 @@ Status: Ready, There is a STL case file, but no back lid YET.
 
 3) Upload the code
 4) Done!
+
+## How to use?
+
+- Time section: Displays time and date
+- Temperature and humidity section: Displays current temperature in Celsius. Humidity is displayed in light blue text with the percentage
+- The AQI section displays the current AQI (1—lowest, the best | 5—highest, the worst). It also shows the current Co2 and EtOh concentrations in ppm.
+- Rain prediction section: It actually displays the percentage of weather getting worse (0 to 100%). If it stays below ~20%, weather probably won't change. It uses BME280's pressure and Zambretti algorithm to predict. Please allow at least 3 hours after the powering to get accurate results. Note that data won't be saved after the powering off.
