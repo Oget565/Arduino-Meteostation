@@ -41,7 +41,7 @@ VIN →	 5V
 
 GND →	 GND
 
-SCl →	 A5
+SCL →	 A5
 
 SDA →	 A4
 
